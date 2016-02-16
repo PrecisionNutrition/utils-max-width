@@ -1,0 +1,29 @@
+/**
+ * @define utilities
+ * Max width
+ */
+
+.u-maxWidthAuto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.u-maxWidth1 {
+  max-width: calc(3 * var(--base-unit)) !important;
+}
+
+.u-maxWidth2 {
+  max-width: calc(4 * var(--base-unit)) !important;
+}
+
+.u-maxWidth3 {
+  max-width: calc(6 * var(--base-unit)) !important;
+}
+
+.u-maxWidth4 {
+  max-width: calc(8 * var(--base-unit)) !important;
+}
+
+:root {
+  --base-unit: 8rem;
+}

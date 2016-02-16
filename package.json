@@ -1,0 +1,36 @@
+{
+  "name": "@precision-nutrition/utils-max-width",
+  "description": "Max width utilities",
+  "version": "0.0.0",
+  "style": "index.css",
+  "files": [
+    "index.css",
+    "index.js",
+    "lib"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "stylelint-config-suitcss": "^3.0.0",
+    "suitcss-components-test": "*",
+    "suitcss-preprocessor": "^1.0.0"
+  },
+  "scripts": {
+    "build": "npm i && npm run preprocess",
+    "build-test": "npm i && npm run preprocess-test",
+    "lint": "suitcss -c test/config.json index.css build/lint.css && rm build/lint.css",
+    "preprocess": "suitcss index.css build/build.css",
+    "preprocess-test": "suitcss -i test test/test.css build/test.css",
+    "watch": "npm run preprocess-test -- -w -v",
+    "test": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/PrecisionNutrition/utils-max-width.git"
+  },
+  "keywords": [
+    "browser",
+    "css-utilities",
+    "max-width",
+    "style"
+  ]
+}
